@@ -1,0 +1,162 @@
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+
+}
+.dashboard_container{
+    max-width:100vw;
+    max-height:100vh;
+  
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+
+
+
+    /*main content styling*/
+/* .dashboard_content {
+    width: 82%;
+    height: calc(100%-80px);
+    border: 1px solid black;
+    
+} */
+/* 
+.Dashboard_header {
+    position: fixed;
+    top: 0;
+    left: 18.7%;
+    bottom:80px;
+    max-width: 82%;
+    height: 80px;
+    
+    background-color:  #0A95D8;
+        border: 1px solid black;
+    display: flex;
+    justify-content:flex-end ;
+    z-index:1000;
+}
+.profile_notification_wrapper {
+    align-self:center;
+    width: 216px;
+    height:48px;
+   
+    display:flex;
+    justify-content:space-between;
+}
+.main_content_img {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+   color:#fff;
+}
+.user_wrapper {
+    width: 194px;
+    height: 48px;
+    display: flex;
+   
+   
+    
+}
+.user_image {
+    width: 48px;
+    height: 48px;
+    object-fit:cover;
+    margin-left:30px;
+}
+.user_info {
+    align-self: center;
+    width: 138px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+.user_name {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.user_id {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+ */
+ .Dashboard_header {
+    position: fixed;
+    top: 0;
+    left: 18.7%;
+    bottom:80px;
+    width: 82%;
+    height: 80px;
+    background-color:  #0A95D8;
+    
+    display: flex;
+    justify-content:flex-end ;
+    z-index:1000;
+}
+.profile_notification_wrapper {
+    align-self:center;
+    width: 216px;
+    height:48px;
+   
+    display:flex;
+    justify-content:space-between;
+}
+.main_content_img {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+   color:#fff;
+}
+.user_wrapper {
+    width: 194px;
+    height: 48px;
+    display: flex;
+   
+   
+    
+}
+.user_image {
+    width: 48px;
+    height: 48px;
+    object-fit:cover;
+    margin-left:30px;
+}
+.user_info {
+    align-self: center;
+    width: 138px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+.user_name {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.user_id {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+

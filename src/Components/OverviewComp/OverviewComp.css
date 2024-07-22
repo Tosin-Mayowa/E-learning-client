@@ -1,0 +1,326 @@
+.dashboard_main_content {
+    height: 100%;
+    padding: 2rem;
+    /*border: 1px solid red;*/
+}
+
+.dashboard_content {
+    margin-left: 18.7%;
+    margin-top: 80px;
+    width: 82%;
+}
+
+.content_wrapper {
+    height: 100%;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview_right {
+    width: 66%;
+    height: 92%;
+    /*border: 1px solid black;*/
+}
+
+.event_side {
+    width: 32%;
+    height: 81.8%;
+    border: 1px solid black;
+}
+
+.activity {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.student_report {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.report_card {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 29%;
+    height: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F9FAFB;
+}
+
+.card_icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.card_text {
+    margin: 0;
+    padding: 0;
+}
+/*courses card*/
+.courses {
+    margin-top: 60px;
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+      /* border: 1px solid red;   */
+}
+
+.student_courses {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.course_arrow_wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.course_arrow {
+    margin: 0;
+    padding: 0;
+}
+
+.courses_card {
+    height: 70.4%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    /* border: 1px solid green;  */
+}
+
+.card_crs {
+    width: 44%;
+    height: 87%;
+    padding: 15px;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    background-color: #F9FAFB;
+}
+.course-subwrapper {
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    padding:0;
+}
+.courses_image {
+    width: 145px;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.course_progress_container {
+    width: 163px;
+    height: 100%;
+    padding:0;
+    margin:7px;
+}
+
+/*progress bar*/
+
+
+.course-progress-svg-div {
+    position: relative;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.course-progress-svg-element {
+    transform: rotate(90deg);
+    margin-top: -8px;
+   
+}
+
+.course-progress-bg {
+    fill: none;
+    stroke: rgba(128, 0, 128, 0.3);
+    stroke-width: 10;
+}
+
+.course-progress-bg_two {
+    fill: none;
+    stroke: rgba(255, 0, 0, 0.3);
+    stroke-width: 10;
+}
+
+.course-progress-bar {
+    fill: none;
+    stroke: purple;
+    stroke-width: 10;
+    stroke-dasharray: 188.57;
+    stroke-dashoffset: 94.29;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+
+.course-progress-text {
+    position: absolute;
+    bottom: 40px;
+    left: 67px;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.course_progress_container:hover .course-progress-bar {
+    stroke-dashoffset: 131.99;
+}
+
+.course-progress-bar_2 {
+    fill: none;
+    stroke: red;
+    stroke-width: 10;
+    stroke-dasharray: 188.57;
+    stroke-dashoffset: 131.99;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.course_progress_container:hover .course-progress-bar_2 {
+    stroke-dashoffset: 94.29;
+}
+
+/*project style*/
+.project {
+    /*padding:1rem;*/
+    margin-top: 40px;
+    height: 64%;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid black; */
+}
+
+.project_card {
+    margin-top: 20px;
+    height: 92.4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.student_project {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.card_prjct {
+    padding: 15px;
+    width: 44%;
+    height: 75%;
+    /*border: 1px solid black;*/
+    border-radius: 8px;
+    background-color: #F9FAFB;
+}
+.project-subwrapper {
+    /*border: 1px solid red;*/
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project_image {
+    width: 100%;
+    height: 130px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project_text {
+    width: 60%;
+    height: 42px;
+     /* border: 1px solid black; */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.project_progress_bar_wrapper {
+    /*border: 1px solid blue;*/
+    height: 32px;
+}
+
+.project_progress_div {
+    color: #333;
+    height: 5px;
+    margin-top: -10px;
+    background-color: rgba(128, 0, 128, 0.3);
+}
+
+.project_progress_div_two {
+    color: #333;
+    height: 5px;
+    margin-top: -10px;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.project_progress_indicator {
+    height: 100%;
+    width: 50%;
+    background-color: purple;
+    transition: width 0.5s ease;
+}
+
+.card_prjct:hover .project_progress_indicator {
+    width: 30%;
+}
+
+.project_progress_indicator_two {
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    transition: width 0.5s ease;
+}
+
+.card_prjct:hover .project_progress_indicator_two {
+    width: 20%;
+}
+
+.project_arrow_wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_arrow {
+    margin: 0;
+    padding: 0;
+}
+.progress_level_text_1{
+    font-size:13px; 
+    color:purple;
+    font-weight:700;
+}
+.progress_level_text_2{
+    font-size:13px; 
+    color:red;
+    font-weight:700;
+}
+/* @media (min-width: 1440px) {
+    .Dashboard_header {
+        
+    }
+} */
