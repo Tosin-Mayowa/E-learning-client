@@ -1,15 +1,12 @@
-
-
-import React from 'react'
 import './App.css'
 import Overview from './pages/Overview'
 
-function App() {
+function App(){
 
   
   return (
     <>
-   <Overview/>
+   <Overview/> 
     </>
   )
 }
