@@ -1,6 +1,7 @@
 import './App.css'
+import Class from './pages/Class'
+// import Course from './pages/Course'
 // import Overview from './pages/Overview'
-import SignUp from './pages/SignUp'
 
 function App(){
 
@@ -8,7 +9,8 @@ function App(){
   return (
     <>
    {/* <Overview/>  */}
-   <SignUp />
+   <Class/>
+   {/* <Course/> */}
     </>
   )
 }
