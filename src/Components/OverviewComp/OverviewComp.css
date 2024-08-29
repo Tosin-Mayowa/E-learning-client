@@ -1,7 +1,7 @@
 .dashboard_main_content {
     height: 100%;
     padding: 2rem;
-    /*border: 1px solid red;*/
+    /* border: 1px solid red; */
 }
 
 .dashboard_content {
@@ -26,7 +26,7 @@
 .event_side {
     width: 32%;
     height: 81.8%;
-    border: 1px solid black;
+    border: 1px solid black; 
 }
 
 .activity {
@@ -73,7 +73,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-      /* border: 1px solid red;   */
+      /* border: 1px solid blue;   */
 }
 
 .student_courses {
@@ -89,7 +89,7 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
+     /* border: 1px solid olive;  */
 }
 
 .course_arrow {
@@ -98,23 +98,23 @@
 }
 
 .courses_card {
-    height: 70.4%;
+    height: 90.4%;
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 10px;
     justify-content: space-between;
     /* border: 1px solid green;  */
 }
 
 .card_crs {
-    width: 44%;
-    height: 87%;
-    padding: 15px;
-    /* border: 1px solid red; */
+    width: 46%;
+    height: 90%;
+    padding: 10px;
+     /* border: 1px solid red;  */
     border-radius: 8px;
     background-color: #F9FAFB;
 }
 .course-subwrapper {
-    /* border: 1px solid black; */
+     /* border: 1px solid black;  */
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -122,17 +122,18 @@
     padding:0;
 }
 .courses_image {
-    width: 145px;
+    width: 138px;
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
 }
 
 .course_progress_container {
-    width: 163px;
+    width: 167px;
     height: 100%;
     padding:0;
     margin:7px;
+    /* border: 1px solid pink; */
 }
 
 /*progress bar*/
@@ -144,11 +145,14 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+ 
+   
 }
 
 .course-progress-svg-element {
     transform: rotate(90deg);
     margin-top: -8px;
+    z-index: 1000;
    
 }
 
@@ -176,7 +180,7 @@
 
 .course-progress-text {
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 52%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
@@ -228,7 +232,7 @@
 
 .card_prjct {
     padding: 15px;
-    width: 44%;
+    width: 46%;
     height: 75%;
     /*border: 1px solid black;*/
     border-radius: 8px;

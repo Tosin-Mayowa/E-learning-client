@@ -3,7 +3,7 @@ import "./SignUpComp.css";
 import Select, { ActionMeta, MultiValue, SingleValue, StylesConfig } from "react-select";
 import { getCountries, getStates } from "country-state-picker";
 import registerReducer from "../../reducer/registerReducer";
-
+import Logo from '../../assets/Globaltech_logo.png';
 
 type NonNullableSingleValue<T> = NonNullable<SingleValue<T>>;
 const initialState = {
@@ -153,9 +153,14 @@ export const SignUpComp = () => {
     <>
       <div className="signup-wrapper">
         <div className="signup-nested-wrapper">
-          <div className="signup-logo"></div>
-          <div className="signup-progress-bar"></div>
-          <div className="signup-personal-info-box"></div>
+          {/* <div className="signup-logo">
+            <img src={Logo} alt="Globaltech logo" className="signup_logo_img"/>
+          </div> */}
+         
+          <div className="signup-personal-info-box">
+            <p className="signup_persona_info_text_one">Personal Information</p>
+            <p className="signup_persona_info_text_two">Your Learning Journey Start Here...</p>
+          </div>
           {!isNext ? (
             <div className="signup-input-box">
               <div className="signup-inpt-1 signup">
