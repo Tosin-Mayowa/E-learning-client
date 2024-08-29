@@ -1,9 +1,11 @@
 import React, { useReducer, useState } from "react";
 import "./SignUpComp.css";
-import Select, { SingleValue } from "react-select";
+import Select, { ActionMeta, MultiValue, SingleValue, StylesConfig } from "react-select";
 import { getCountries, getStates } from "country-state-picker";
 import registerReducer from "../../reducer/registerReducer";
+import Logo from '../../assets/Globaltech_logo.png';
 
+type NonNullableSingleValue<T> = NonNullable<SingleValue<T>>;
 const initialState = {
   fullName: "",
   stateVal: null,
@@ -13,6 +15,7 @@ const initialState = {
     color: "",
   },
   email: "",
+  courses:[],
   gender: null,
   dateOfBirth: "",
   matricNo: "",
@@ -25,16 +28,21 @@ export interface OptionType {
   label: string;
   color?: string;
 }
-export interface IOption {
+
+export type MultiOptionType= {
   value: string;
   label: string;
-  color: string;
-}
+};
+export const isSingleValue = (option: SingleValue<OptionType> | MultiValue<OptionType>): option is NonNullableSingleValue<OptionType>  => {
+  return option !== null && !Array.isArray(option);
+};
+
+
 export const SignUpComp = () => {
   const [isNext, setIsNext] = useState(false);
   const [isClick, setIsClick] = useState(false);
   const [stateOptions, setStateptions] = useState([]);
-  const options: IOption[] = getCountries().map(
+  const options: OptionType[]|MultiOptionType[] = getCountries().map(
     ({ name, code }: { name: string; code: string }) => ({
       value: code,
       label: name,
@@ -45,28 +53,96 @@ export const SignUpComp = () => {
     { value: "Male", label: "Male" },
     { value: "Female", label: "Female" },
   ];
+  const courseOptions: OptionType[] = [
+    { value: 'FE', label: 'Frontend Engineering' },
+    { value: 'BE', label: 'Backend Engineering' },
+    { value: 'FSE', label: 'Fullstack Software Engr.' },
+    { value: 'PD', label: 'UI/UX' },
+    { value: 'G', label: 'Graphics' },
+    { value: 'DA', label: 'Data Analytics' },
+    { value: 'DS', label: 'Data Science' },
+    { value: 'SE', label: 'System Engineering' },
+    { value: 'NET', label: 'Networking' },
+    { value: 'CS', label: 'Cybersecurity' },
+    { value: 'FCS', label: 'Fullstack Cybersecurity' },
+    { value: 'ICT', label: 'ICT' },
+    { value: 'DM', label: 'Digital Marketing' },
+    { value: '.NET', label: 'ASP.NET CORE' },
+    { value: 'PJ', label: 'Python/Jango' },
+  ];
   const [states, dispatch] = useReducer(registerReducer, initialState);
-  const colorStyles = {
-    control: (styles: any, { isFocused }: any) => {
-      return {
-        ...styles,
-        marginTop: "0.5rem",
-        height: "3rem",
+  // const colorStyles = {
+  //   control: (styles: any, { isFocused }: any) => {
+  //     return {
+  //       ...styles,
+  //       marginTop: "0.5rem",
+  //       height: "3rem",
+  //       fontSize: "15px",
+  //       lineHeight: "22px",
+  //       background: "rgba(6, 0, 137, 0.05)",
+  //       borderRadius: "8px",
+  //       borderColor: isFocused ? "#F9C567" : "",
+  //       color: "#fff",
+  //     };  
+  //   },
+
+  // };
+  const colorStyles: StylesConfig<OptionType, boolean> = {
+    control: (provided,{ isFocused }: any) => ({
+      ...provided,
+      marginTop: "0.5rem",
+        minHeight: "3rem",
+        height:"auto",
         fontSize: "15px",
         lineHeight: "22px",
         background: "rgba(6, 0, 137, 0.05)",
         borderRadius: "8px",
-        borderColor: isFocused ? "#F9C567" : "",
+        border:"none",
+        borderColor: isFocused ? "none" : "none",
         color: "#fff",
-      };
-    },
+       
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "#333",
+    }),
+    multiValue: (provided) => ({
+      ...provided,
+      borderRadius:"50px",
+      backgroundColor: '#0A95D8',
+      backgroundSize:'108%'
+    }),
+    multiValueLabel: (provided) => ({
+      ...provided,
+      fontWeight:500,
+      color: '#fff',
+
+    }),
+    multiValueRemove: (provided) => ({
+      ...provided,
+      color: 'white',
+      ':hover': {
+        backgroundColor: 'red',
+        color: 'white',
+        textAlign:"center",
+        borderRadius:"50%",
+        width:"20px",
+        height:"20px",
+        fontSize:"bold"
+      },
+    }),
   };
+
+
+
+
   const {
     fullName,
     stateVal,
     country,
     email,
     gender,
+    courses,
     dateOfBirth,
     matricNo,
     address,
@@ -77,9 +153,14 @@ export const SignUpComp = () => {
     <>
       <div className="signup-wrapper">
         <div className="signup-nested-wrapper">
-          <div className="signup-logo"></div>
-          <div className="signup-progress-bar"></div>
-          <div className="signup-personal-info-box"></div>
+          {/* <div className="signup-logo">
+            <img src={Logo} alt="Globaltech logo" className="signup_logo_img"/>
+          </div> */}
+         
+          <div className="signup-personal-info-box">
+            <p className="signup_persona_info_text_one">Personal Information</p>
+            <p className="signup_persona_info_text_two">Your Learning Journey Start Here...</p>
+          </div>
           {!isNext ? (
             <div className="signup-input-box">
               <div className="signup-inpt-1 signup">
@@ -123,10 +204,10 @@ export const SignUpComp = () => {
                 <Select
                   options={options}
                   value={country}
-                  onChange={(selectedOption) => {
+                  onChange={(selectedOption:SingleValue<OptionType>|MultiValue<MultiOptionType>, actionMeta: ActionMeta<OptionType>) => {
                     dispatch({ type: "SET_COUNTRY", payload: selectedOption });
                     console.log("Selected test:", "testing");
-                    if (selectedOption !== null) {
+                    if (isSingleValue(selectedOption) ) {
                       const states = getStates(selectedOption.value)?.map(
                         (state: string) => ({
                           value: state,
@@ -135,7 +216,7 @@ export const SignUpComp = () => {
                         })
                       );
 
-                      setStateptions(states);
+                      setStateptions(states || []);
                     }
                   }}
                   styles={colorStyles}
@@ -146,7 +227,7 @@ export const SignUpComp = () => {
                 <Select
                   options={stateOptions}
                   value={stateVal}
-                  onChange={(selectedOption: SingleValue<OptionType>) =>
+                  onChange={(selectedOption: SingleValue<OptionType>|MultiValue<MultiOptionType>) =>
                     dispatch({ type: "SET_STATE_VAL", payload: selectedOption })
                   }
                   styles={colorStyles}
@@ -157,7 +238,7 @@ export const SignUpComp = () => {
                 <Select
                   options={genderOptions}
                   value={gender}
-                  onChange={(selectedOption: SingleValue<OptionType>) => {
+                  onChange={(selectedOption: SingleValue<OptionType>|MultiValue<MultiOptionType>) => {
                     dispatch({ type: "SET_GENDER", payload: selectedOption });
                   }}
                   styles={colorStyles}
@@ -185,10 +266,24 @@ export const SignUpComp = () => {
                   className="signup-input"
                 />
               </div>
+              <div className="signup-inpt-6 signup">
+                <p className="signup-text">Courses</p>
+                <Select
+                isMulti
+                 isSearchable
+                 
+                  value={courses}
+                  onChange={(option:MultiValue<MultiOptionType>)=>{
+                    dispatch({ type: 'SET_COURSES', payload: option });
+                  }}
+                  options={courseOptions}
+                  styles={colorStyles}
+                />
+              </div>
               <div className="signup-inpt-1 signup">
                 <p className="signup-text">Phone Number</p>
                 <input
-                  type="text"
+                  type="tel"
                   name=""
                   placeholder="Enter your Phone Number"
                   value=""
