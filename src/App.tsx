@@ -1,14 +1,18 @@
 import './App.css'
-import Overview from './pages/Overview'
-// import SignUp from './pages/SignUp'
+// import Class from './pages/Class'
+import Course from './pages/Course'
+// import Overview from './pages/Overview'
+import TestExam from './pages/TestExam'
+
 
 function App(){
 
   
   return (
     <>
-   <Overview/> 
-   {/* <SignUp /> */}
+   {/* <Overview/>  */}
+   {/* <Course /> */}
+   <TestExam/>
     </>
   )
 }
