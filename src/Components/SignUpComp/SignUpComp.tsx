@@ -4,6 +4,8 @@ import Select, { ActionMeta, MultiValue, SingleValue, StylesConfig } from "react
 import { getCountries, getStates } from "country-state-picker";
 import registerReducer from "../../reducer/registerReducer";
 import Logo from '../../assets/Globaltech_logo.png';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 type NonNullableSingleValue<T> = NonNullable<SingleValue<T>>;
 const initialState = {
@@ -56,7 +58,7 @@ export const SignUpComp = () => {
   const courseOptions: OptionType[] = [
     { value: 'FE', label: 'Frontend Engineering' },
     { value: 'BE', label: 'Backend Engineering' },
-    { value: 'FSE', label: 'Fullstack Software Engr.' },
+    { value: 'FS', label: 'Fullstack Software Engr.' },
     { value: 'PD', label: 'UI/UX' },
     { value: 'G', label: 'Graphics' },
     { value: 'DA', label: 'Data Analytics' },
@@ -68,7 +70,7 @@ export const SignUpComp = () => {
     { value: 'ICT', label: 'ICT' },
     { value: 'DM', label: 'Digital Marketing' },
     { value: '.NET', label: 'ASP.NET CORE' },
-    { value: 'PJ', label: 'Python/Jango' },
+    { value: 'PJ', label: 'Python/Django' },
   ];
   const [states, dispatch] = useReducer(registerReducer, initialState);
   // const colorStyles = {
@@ -147,6 +149,7 @@ export const SignUpComp = () => {
     matricNo,
     address,
     password,
+    phone_num
   } = states;
 
   return (
@@ -282,13 +285,28 @@ export const SignUpComp = () => {
               </div>
               <div className="signup-inpt-1 signup">
                 <p className="signup-text">Phone Number</p>
-                <input
+                {/* <input
                   type="tel"
                   name=""
                   placeholder="Enter your Phone Number"
                   value=""
                   className="signup-input"
-                />
+                /> */}
+                <PhoneInput
+  placeholder="Enter phone number"
+  value={phone_num}
+  // onChange={setValue}
+  onChange={() =>{
+    console.log("phn",phone_num);
+    dispatch({
+      type: "SET_DATE_OF_BIRTH",
+      payload: phone_num,
+    })
+  }
+   
+  }
+ 
+  />
               </div>
               <div className="signup-inpt-1 signup">
                 <p className="signup-text">Email Address</p>
