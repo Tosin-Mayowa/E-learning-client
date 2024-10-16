@@ -3,7 +3,7 @@ import Icon1 from "../assets/Icon1.png";
 import Icon2 from "../assets/Icon2.png";
 
 import Image1 from "../assets/Image (1).png";
-import Image2 from "../assets/Image.png";
+import Image2 from "../assets/Effects.png";
 import project1 from "../assets/Image (1).png";
 import project2 from "../assets/Image (2).png";
 

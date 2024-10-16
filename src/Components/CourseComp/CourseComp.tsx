@@ -59,7 +59,6 @@ export const CourseComp: React.FC = (): React.JSX.Element => {
                        {
                         courseDetails?.map(item=><CourseDetails key={item.id} {...item}/>)
                        }
-
                     </div>
                 </div>
 

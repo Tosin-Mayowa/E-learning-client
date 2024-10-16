@@ -28,5 +28,5 @@ export const CourseDetails: React.FC<ICourseDetails> = ({ image, title, noOfInst
 
 
         </>
-    )
+)
 }

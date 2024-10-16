@@ -1,0 +1,255 @@
+.heading {
+    width: 165px;
+    height: 33px;
+    margin-top: 104px;
+    margin-left: 280px;
+}
+
+.heading p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 32.78px;
+}
+
+.tests {
+    width: 1052px;
+    background-color: #F9FAFB;
+    border: 4px solid #FFFFFF;
+    height: 277px;
+    border-radius: 16px;
+    margin-left: 280px;
+    margin-top: 15px;
+}
+
+.tests-heading {
+    width: 1052px;
+    height: 27px;
+    display: flex;
+    gap: 950px;
+}
+
+.tests-heading p {
+    width: 50px;
+    height: 27px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 15px;
+}
+
+.arrow-up {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000000;
+    margin-top: 15px;
+}
+
+.frontend {
+    width: 1013px;
+    height: 86px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.product-design {
+    width: 1013px;
+    height: 86px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-top: 9px;
+}
+
+.title {
+    display: flex;
+    gap: 60%;
+}
+
+.assessment {
+    margin-left: 20px;
+    line-height: 21px;
+}
+
+.duration {
+    margin-left: 75px;
+}
+
+.assessment-title p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.course-title p {
+    font-weight: 500;
+    color: #FF4B4B;
+}
+
+.duration-text p {
+    color: #969696;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.time-duration p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+}
+
+.product-title {
+    display: flex;
+    gap: 60%;
+}
+
+.pd-assessment {
+    margin-left: 20px;
+    line-height: 21px;
+}
+
+.pd-duration {
+    margin-left: 75px;
+}
+
+.pd-assessment-title p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pd-course-title p {
+    font-weight: 500;
+    color: #8F00FF;
+}
+
+.pd-duration-text p {
+    color: #969696;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.pd-time-duration p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+}
+
+.exams  {
+    width: 1052px;
+    background-color: #F9FAFB;
+    border: 4px solid #FFFFFF;
+    height: 277px;
+    border-radius: 16px;
+    margin-left: 280px;
+    margin-top: 12px;
+}
+
+.exam-heading {
+    width: 1052px;
+    height: 27px;
+    display: flex;
+    gap: 950px;
+}
+
+.exam-heading p {
+    width: 50px;
+    height: 27px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 15px;
+}
+
+.frontend-exam {
+    width: 1013px;
+    height: 86px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.exam-title {
+    display: flex;
+    gap: 60%;
+}
+
+.exam-assessment {
+    margin-left: 20px;
+    line-height: 21px;
+}
+
+.exam-assessment-title p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.exam-course-title p {
+    font-weight: 500;
+    color: #FF4B4B;
+}
+
+.exam-duration {
+    margin-left: 12%;
+}
+
+.exam-duration-text p {
+    color: #969696;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.exam-duration-text p {
+    color: #969696;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.pd-assessment-exam {
+    margin-left: 20px;
+    line-height: 21px;
+}
+
+.pd-duration-exam {
+    margin-left: 20%;
+}
+
+.pd-assessment-title-exam p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pd-course-title-exam p {
+    font-weight: 500;
+    color: #8F00FF;
+}
+
+.pd-duration-text-exam p {
+    color: #969696;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.pd-time-duration-exam p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+}
+
+.product-design-exam {
+    width: 1013px;
+    height: 86px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-top: 9px;
+}
+
+.product-title-exam  {
+    display: flex;
+    gap: 60%;
+}
