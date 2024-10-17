@@ -1,0 +1,141 @@
+.login-logo img {
+    width: 345px;
+}
+
+.login-logo p {
+    font-size: 21px;
+    color: #0065FD;
+    font-weight: 400;
+    width: 300px;
+    margin-top: -25px;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-logo {
+    margin-left: 703px;
+}
+
+.login-title {
+    width: 200px;
+    margin-left: 800px;
+    margin-top: 80px;
+}
+
+.login-title h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.input-fields {
+    margin-left: 580px;
+    margin-top: 50px;
+}
+
+.input-fields .login-input-one label {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 21.86px;
+}
+
+.input-fields .login-input-one input {
+    width: 530px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #969696;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+    color: #969696;
+    padding-left: 10px;
+}
+
+.input-fields .login-input-two label {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 21.86px;
+}
+
+.input-fields .login-input-two {
+    margin-top: 30px;
+}
+
+.input-fields .login-input-two input {
+    width: 530px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #969696;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+    color: #969696;
+}
+
+.password-icon {
+    border: 1px solid #969696;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 15px;
+}
+
+.more {
+    margin-left: 580px;
+    margin-top: 15px;
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check {
+    margin-right: 8px;
+    width: 12px;
+}
+
+.checkbox {
+    color: #969696;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.forgot-password a {
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0065FD;
+    text-decoration: none;
+}
+
+.login-btn {
+    margin-left: 580px;
+    width: 530px;
+    margin-top: 16px;
+    height: 54px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0065FD;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register {
+    margin-left:580px;
+}
+
+.register p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: #969696;
+}
+
+.register p a {
+    color: #0065FD;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}

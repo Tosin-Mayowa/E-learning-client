@@ -156,9 +156,9 @@ export const SignUpComp = () => {
     <>
       <div className="signup-wrapper">
         <div className="signup-nested-wrapper">
-          {/* <div className="signup-logo">
+           <div className="signup-logo">
             <img src={Logo} alt="Globaltech logo" className="signup_logo_img"/>
-          </div> */}
+          </div> 
          
           <div className="signup-personal-info-box">
             <p className="signup_persona_info_text_one">Personal Information</p>
