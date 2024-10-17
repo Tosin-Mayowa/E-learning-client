@@ -1,8 +1,11 @@
 import './App.css'
 // import Class from './pages/Class'
-import Course from './pages/Course'
+// import Course from './pages/Course'
+import Login from './pages/Login'
+// import SignUp from './pages/SignUp'
 // import Overview from './pages/Overview'
-import TestExam from './pages/TestExam'
+// import TestExam from './pages/TestExam'
+
 
 
 function App(){
@@ -10,9 +13,11 @@ function App(){
   
   return (
     <>
+    {/* <SignUp/> */}
    {/* <Overview/>  */}
    {/* <Course /> */}
-   <TestExam/>
+   {/* <TestExam/> */}
+   <Login/>
     </>
   )
 }

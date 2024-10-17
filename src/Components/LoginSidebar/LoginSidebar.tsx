@@ -1,6 +1,7 @@
 import React from 'react';
 import "./LoginSidebar.css"
-import Logo from '../../assets/Globaltech_logo.png';
+// import Logo from '../../assets/Globaltech_logo.png';
+import sideimage from '../../assets/Left.jpg'
 
 export const LoginSidebar=()=>{
 
@@ -9,7 +10,7 @@ export const LoginSidebar=()=>{
         <>
          <div className="Login-sidebar">
          <div className="onboarding-logo">
-            <img src={Logo} alt="Globaltech logo" className="onboarding-logo-img"/>
+            <img src={sideimage} alt="Globaltech logo" className="onboarding-logo-img"/>
           </div>
             
          </div>
