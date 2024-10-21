@@ -1,16 +1,20 @@
-import './App.css'
-import Overview from './pages/Overview'
-// import SignUp from './pages/SignUp'
+import "./App.css";
+import LandingPage from "./pages/landingPage";
+import "@fontsource/manrope";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App(){
-
-  
+function App() {
   return (
     <>
-   <Overview/> 
-   {/* <SignUp /> */}
+      {/* <Overview/>  */}
+      {/* <SignUp /> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
