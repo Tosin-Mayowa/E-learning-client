@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React,{ useCallback, useReducer, useState } from "react";
 import "./SignUpComp.css";
 import Select, { ActionMeta, MultiValue, SingleValue, StylesConfig } from "react-select";
 import { getCountries, getStates } from "country-state-picker";
@@ -6,6 +6,8 @@ import registerReducer from "../../reducer/registerReducer";
 import Logo from '../../assets/Globaltech_logo.png';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import { courseOptions, genderOptions, options } from "../../lib/utilities";
+import { signUpApi } from "../../api/register";
 
 type NonNullableSingleValue<T> = NonNullable<SingleValue<T>>;
 const initialState = {
@@ -44,34 +46,7 @@ export const SignUpComp = () => {
   const [isNext, setIsNext] = useState(false);
   const [isClick, setIsClick] = useState(false);
   const [stateOptions, setStateptions] = useState([]);
-  const options: OptionType[]|MultiOptionType[] = getCountries().map(
-    ({ name, code }: { name: string; code: string }) => ({
-      value: code,
-      label: name,
-      color: "#fff",
-    })
-  );
-  const genderOptions: OptionType[] = [
-    { value: "Male", label: "Male" },
-    { value: "Female", label: "Female" },
-  ];
-  const courseOptions: OptionType[] = [
-    { value: 'FE', label: 'Frontend Engineering' },
-    { value: 'BE', label: 'Backend Engineering' },
-    { value: 'FS', label: 'Fullstack Software Engr.' },
-    { value: 'PD', label: 'UI/UX' },
-    { value: 'G', label: 'Graphics' },
-    { value: 'DA', label: 'Data Analytics' },
-    { value: 'DS', label: 'Data Science' },
-    { value: 'SE', label: 'System Engineering' },
-    { value: 'NET', label: 'Networking' },
-    { value: 'CS', label: 'Cybersecurity' },
-    { value: 'FCS', label: 'Fullstack Cybersecurity' },
-    { value: 'ICT', label: 'ICT' },
-    { value: 'DM', label: 'Digital Marketing' },
-    { value: '.NET', label: 'ASP.NET CORE' },
-    { value: 'PJ', label: 'Python/Django' },
-  ];
+
   const [states, dispatch] = useReducer(registerReducer, initialState);
   // const colorStyles = {
   //   control: (styles: any, { isFocused }: any) => {
@@ -152,6 +127,33 @@ export const SignUpComp = () => {
     phone_num
   } = states;
 
+  const sendSignUp = useCallback(async ()=>{
+    const config={
+      fullName,
+      phoneNumber:phone_num,
+    address,
+    state:stateVal,
+    country,
+    email,
+    password,
+    dateOfBirth,
+    matricNo,
+    courses
+    }
+    const resp = await signUpApi(config);
+  },[
+    fullName,
+    stateVal,
+    country,
+    email,
+    gender,
+    courses,
+    dateOfBirth,
+    matricNo,
+    address,
+    password,
+    phone_num
+  ])
   return (
     <>
       <div className="signup-wrapper">
@@ -172,7 +174,7 @@ export const SignUpComp = () => {
                   type="text"
                   name=""
                   placeholder="Enter your fullname"
-                  value=""
+                  value={fullName}
                   className="signup-input"
                 />
               </div>
@@ -182,7 +184,7 @@ export const SignUpComp = () => {
                   type="text"
                   name=""
                   placeholder="Your home address"
-                  value=""
+                  value={address}
                   className="signup-input"
                 />
               </div>
@@ -265,7 +267,7 @@ export const SignUpComp = () => {
                   type="text"
                   name=""
                   placeholder="Enter your Matric Number"
-                  value=""
+                  value={matricNo}
                   className="signup-input"
                 />
               </div>
@@ -314,7 +316,7 @@ export const SignUpComp = () => {
                   type="text"
                   name=""
                   placeholder="example@gmail.com"
-                  value=""
+                  value={email}
                   className="signup-input"
                 />
               </div>
@@ -325,7 +327,7 @@ export const SignUpComp = () => {
                   type="text"
                   name=""
                   placeholder="Enter your password"
-                  value=""
+                  value={password}
                   className="signup-input"
                 />
               </div>
@@ -333,7 +335,24 @@ export const SignUpComp = () => {
                 <button
                   type="button"
                   className="signup-submit-btn"
-                 
+                  onClick={() =>{
+                    sendSignUp();
+                  }}
+                  disabled={
+                    !(
+                      fullName&&
+    stateVal&&
+    country&&
+    email&&
+    gender&&
+    courses&&
+    dateOfBirth&&
+    matricNo&&
+    address&&
+    password&&
+    phone_num
+                    )
+                  }
                 >
                   Submit
                 </button>
