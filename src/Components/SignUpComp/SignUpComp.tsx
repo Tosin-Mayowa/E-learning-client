@@ -127,6 +127,25 @@ export const SignUpComp = () => {
     phone_num
   } = states;
 
+const resetPayload= {
+  fullName: "",
+  stateVal: null,
+  country: {
+    value: "",
+    label: "",
+    color: "",
+  },
+  email: "",
+  courses:[],
+  gender: null,
+  dateOfBirth: "",
+  matricNo: "",
+  address: "",
+  password: "",
+  phone_num: "",
+}
+
+
   const sendSignUp = useCallback(async ()=>{
     const config={
       fullName,
@@ -139,7 +158,9 @@ export const SignUpComp = () => {
     dateOfBirth,
     matricNo,
     courses
-    }
+    };
+    console.log({config});
+    
     const resp = await signUpApi(config);
   },[
     fullName,
@@ -172,9 +193,10 @@ export const SignUpComp = () => {
                 <p className="signup-text">Fullname</p>
                 <input
                   type="text"
-                  name=""
+                 
                   placeholder="Enter your fullname"
                   value={fullName}
+                  onChange={(e) => dispatch({ type: 'SET_FULL_NAME', payload: e.target.value })}
                   className="signup-input"
                 />
               </div>
@@ -185,9 +207,11 @@ export const SignUpComp = () => {
                   name=""
                   placeholder="Your home address"
                   value={address}
+                  onChange={(e) => dispatch({ type: 'SET_ADDRESS', payload: e.target.value })}
                   className="signup-input"
-                />
+                /> 
               </div>
+
               <div className="signup-inpt-3 signup">
                 <p className="signup-text">Date of Birth</p>
                 <input
@@ -266,6 +290,7 @@ export const SignUpComp = () => {
                 <input
                   type="text"
                   name=""
+                  onChange={(e) => dispatch({ type: 'SET_MATRIC_NO', payload: e.target.value })}
                   placeholder="Enter your Matric Number"
                   value={matricNo}
                   className="signup-input"
@@ -301,7 +326,7 @@ export const SignUpComp = () => {
   onChange={() =>{
     console.log("phn",phone_num);
     dispatch({
-      type: "SET_DATE_OF_BIRTH",
+      type: 'SET_PHONE_NUM',
       payload: phone_num,
     })
   }
@@ -317,6 +342,7 @@ export const SignUpComp = () => {
                   name=""
                   placeholder="example@gmail.com"
                   value={email}
+                  onChange={(e) => dispatch({ type: 'SET_EMAIL', payload: e.target.value })}
                   className="signup-input"
                 />
               </div>
@@ -328,6 +354,7 @@ export const SignUpComp = () => {
                   name=""
                   placeholder="Enter your password"
                   value={password}
+                  onChange={(e) => dispatch({ type: 'SET_PASSWORD', payload: e.target.value })}
                   className="signup-input"
                 />
               </div>
@@ -336,7 +363,10 @@ export const SignUpComp = () => {
                   type="button"
                   className="signup-submit-btn"
                   onClick={() =>{
+                    console.log('submit working');
+                    
                     sendSignUp();
+                    dispatch({ type: 'RESET', payload:resetPayload })
                   }}
                   disabled={
                     !(

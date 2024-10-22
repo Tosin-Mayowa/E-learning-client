@@ -8,6 +8,18 @@ import project1 from "../assets/Image (1).png";
 import project2 from "../assets/Image (2).png";
 import { MultiOptionType, OptionType } from "../Components/SignUpComp/SignUpComp";
 
+import course1 from "../assets/landing-page/Course Image.png"
+import course2 from "../assets/landing-page/Course Image (2).png"
+import course3 from "../assets/landing-page/Course Image (3).png"
+import course4 from "../assets/landing-page/courseImage4.jpg"
+
+
+
+
+
+
+
+
 export const studentsReport = [
     {
       id: 1,
@@ -111,4 +123,70 @@ export const studentsReport = [
     { value: 'DM', label: 'Digital Marketing' },
     { value: '.NET', label: 'ASP.NET CORE' },
     { value: 'PJ', label: 'Python/Django' },
+  ];
+  export const SidebarData = [
+    {
+      name: "Home",
+      path: "hero-section",
+      cName: "nav-links"
+    },
+    {
+      name: "Why Us",
+      path: "why_us",
+      cName: "nav-links"
+    },
+    {
+      name: "Courses",
+      path: "courses",
+      cName: "nav-links"
+    },
+    {
+      name: "Testimonials",
+      path: "testimonials",
+      cName: "nav-links"
+    },
+    {
+      name: "Contact",
+      path: "contact",
+      cName: "nav-links"
+    }
+  
+  ];
+  export const courses = [
+    {
+      image: course1,
+      title: "Frontend Web Development",
+      category: "Web Development",
+      rating: 4.6,
+      modules: 10,
+      duration: 90,
+  
+    },
+    {
+      image: course2,
+      title: "Fundamentals of User Interface Design",
+      category: "Product Design",
+      rating: 4.6,
+      modules: 8,
+      duration: 15,
+  
+    },
+    {
+      image: course3,
+      title: "Introduction to User Experience Design",
+      category: "Product Design",
+      rating: 4.6,
+      modules: 8,
+      duration: 15,
+  
+    },
+    {
+      image: course4,
+      title: "Project Management Professional",
+      category: "Product Management",
+      rating: 4.6,
+      modules: 8,
+      duration: 15,
+  
+    }
   ];

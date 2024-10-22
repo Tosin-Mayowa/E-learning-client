@@ -30,6 +30,13 @@ type IRegister={
   | { type: 'SET_COURSES'; payload:MultiValue<MultiOptionType> }
   | { type: 'RESET'; payload: Partial<IRegister> };
 
+
+
+
+
+ 
+   
+
 const registerReducer = (state: IRegister, action: RegisterAction): IRegister => {
     if (action.type === 'SET_FULL_NAME') {
       return { ...state, fullName: action.payload };
