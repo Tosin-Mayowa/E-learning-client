@@ -12,6 +12,7 @@ const LandingPage: React.FC = () => {
         <HeroSection />
         <WhyUs />
         <CoursesSection />
+        {/* <MultipleItems /> */}
       </div>
     </>
   );

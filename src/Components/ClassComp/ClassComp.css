@@ -1,0 +1,380 @@
+.table-header-container {
+    width: 800px;
+    background-color: #F9FAFB;
+    height: 272px;
+    margin-left: 24%;
+    margin-top: 9%;
+    border-radius: 16px;
+    border: 4px solid #FFFFFF;
+}
+
+.table-header-container table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+.table-header-container table th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.table-header-container table tr td img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.table-header-container table tr th {
+    border-bottom: 1px solid #969696;
+}
+
+.table-header-container table tr:last-child td {
+    border-bottom: none;
+}
+
+.student-courses-info {
+    background-color: #F9FAFB;
+    width: 276px;
+    margin-left: 96%;
+    margin-top: -24.4%;
+    border-radius: 16px;
+    height: 270px;
+    padding: 11px 11px 11px;
+    border: 4px solid #FFFFFF;
+}
+
+.student-courses {
+    display: flex;
+}
+
+.student-courses-info .student-info .student-courses {
+    width: 244px;
+    height: 72px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 11px;
+    gap: 10px;
+}
+
+.student-courses-info .student-info .student-courses .student-courses-div {
+    width: 56px;
+    height: 56px;
+    margin: 8px;
+}
+
+.student-courses-image img{
+    width: 56px;
+    height: 56px;
+    margin: 8px;
+}
+
+.student-courses-info .student-info .student-courses .student-courses-registered {
+    line-height: 0.2;
+}
+
+.courses {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.courses-registered {
+    color: #969696;
+    margin-top: -15px;
+}
+
+.student-courses-info .student-info .student-test {
+    width: 244px;
+    background-color: #FFFFFF;
+    height: 72px;
+    border-radius: 8px;
+    margin-bottom: 11px;
+}
+
+.student-courses-info .student-info .student-projects {
+    width: 244px;
+    background-color: #FFFFFF;
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.student-test {
+    display: flex;
+    gap: 10px;
+}
+
+.student-courses-info .student-info .student-test .student-test-image {
+    border: 1px solid black;
+    width: 56px;
+    height: 56px;
+    margin: 8px;
+}
+
+.student-courses-info .student-info .student-test .student-test-taken {
+    line-height: 0.2;
+}
+
+.student-courses-info .student-info .student-test .student-test-taken .tests {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.student-courses-info .student-info .student-test .student-test-taken .test-taken {
+    color: #969696;
+}
+
+.student-courses-info .student-info .student-projects .student-project-image {
+    border: 1px solid #000000;
+    width: 56px;
+    height: 56px;
+    margin: 8px;
+}
+
+.student-courses-info .student-info .student-projects .student-ongoing-projects {
+    line-height: 0.2;
+}
+
+.student-courses-info .student-info .student-projects .student-ongoing-projects .projects {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.student-courses-info .student-info .student-projects .student-ongoing-projects .ongoing-projects {
+    color: #969696;
+}
+
+.today-class {
+    font-size: 20px;
+    margin-left: 24.3%;
+    font-weight: 700;
+}
+
+.today-classes {
+    margin-left: 24.3%;
+}
+
+.today-classes .today-classes-option {
+    display: flex;
+    gap: 10px;
+}
+
+.today-classes .today-classes-option .recorded-classes {
+    width: 104px;
+    background-color: #0065FD;
+    height: 46px;
+    border-radius: 8px 8px 0px 0px;
+    padding-left: 20px;
+}
+
+.today-classes .today-classes-option .recorded-classes p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.today-classes .today-classes-option .live-classes {
+    width: 108px;
+    height: 46px;
+    background-color: #F9FAFB;
+    border-radius: 8px 8px 0px 0px;
+    border: 3px solid #FFFFFF;
+    padding-left: 14px;
+}
+
+.today-classes .today-classes-option .live-classes p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.today-classes .live-class-available {
+    width: 1060px;
+    background-color: #F9FAFB;
+    height: 544px;
+    border-radius: 0 16px 16px 16px;
+    border: 2px solid #FFFFFF;
+    padding: 19px 16px 16px 20px;
+}
+
+.introduction-to-wireframes {
+    width: 1015px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.introduction-to-wireframes .introduction-to-wireframes-image {
+    width: 120px;
+    height: 80px;
+}
+
+.introduction-to-wireframes .introduction-to-wireframes-image img {
+    width: 120px;
+    height: 80px;
+}
+
+.live-class-available .introduction-to-wireframes .introduction-to-wireframes-topic {
+    line-height: 0.9;
+    max-width: 700px;
+}
+
+.live-class-available .introduction-to-wireframes .introduction-to-wireframes-topic .wireframes-topic {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.live-class-available .introduction-to-wireframes .introduction-to-wireframes-topic .wireframes-sub-topic {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8F00FF;
+}
+
+.today-classes .introduction-to-css-effects {
+    width: 1015px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.introduction-to-css-effects .introduction-css-effects-image {
+    width: 120px;
+    height: 80px;
+}
+
+.live-class-available .introduction-to-css-effects .introduction-to-css-effects-topic .css-effects-topic {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.live-class-available .introduction-to-css-effects .introduction-to-css-effects-topic .css-effects-sub-topic {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF4B4B;
+}
+
+.live-class-available .introduction-to-css-effects .introduction-to-css-effects-topic {
+    line-height: 0.9;
+    max-width: 700px;
+}
+
+.live-class-available .introduction-css-animations {
+    width: 1015px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.live-class-available .introduction-css-animations .introduction-css-animations-image {
+    width: 120px;
+    height: 80px;
+}
+
+.live-class-available .introduction-css-animations .introduction-css-animations-topic .css-animations-topic {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.live-class-available .introduction-css-animations .introduction-css-animations-topic .css-animations-sub-topic {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF4B4B;
+}
+
+.live-class-available .introduction-css-animations .introduction-css-animations-topic {
+    line-height: 0.9;
+    max-width: 700px;
+}
+
+.live-class-available .introduction-to-wireframes .wireframes-check-double-line {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+}
+
+.live-class-available .introduction-to-wireframes .gap {
+    gap: 630px;
+    display: flex;
+}
+
+.live-class-available .introduction-to-css-effects .css-effects-check-double-line {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+}
+
+.live-class-available .introduction-to-css-effects .gap {
+    gap: 630px;
+    display: flex;
+}
+
+.live-class-available .introduction-css-animations .gap .css-animations-check-double-line {
+    /* border: 1px solid #000000; */
+    width: 24px;
+    height: 24px;
+    margin-top: 30px;
+}
+
+/* .live-class-available .introduction-css-animations .gap {
+    display: flex;
+    gap: 670px;
+} */
+
+.live-class-available .why-marketplaceis-important {
+    width: 1015px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+}
+
+.live-class-available .why-marketplaceis-important .why-marketplaceis-important-image {
+    border: 1px solid #000000;
+    width: 120px;
+    height: 80px;
+}
+
+.live-class-available .why-marketplaceis-important .gap {
+    display: flex;
+    gap: 594px;
+}
+
+.live-class-available .why-marketplaceis-important .why-marketplaceis-important-topic {
+    line-height: 0.9;
+    max-width: 700px;
+}
+
+.live-class-available .why-marketplaceis-important .gap .why-marketplaceis-important-check-double-line {
+    border: 1px solid #000000;
+    width: 24px;
+    height: 24px;
+    margin-top: 30px;
+}
+
+.live-class-available .why-marketplaceis-important .why-marketplaceis-important-topic .why-marketplaceis-important-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.live-class-available .why-marketplaceis-important .why-marketplaceis-important-topic .digital-marketing {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFD233;
+}

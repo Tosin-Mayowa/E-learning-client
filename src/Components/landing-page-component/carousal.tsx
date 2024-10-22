@@ -1,61 +1,51 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import arow_right from "../../assets/landing-page/Arrow - Right Circle.png";
 import left_arrow from "../../assets/landing-page/Arrow - Left Circle.png";
-import right_arrow from "../../assets/landing-page/Arrow - Right 2.png";
 
-interface arrow_props {
+interface ArrowProps {
   onClick?: () => void;
 }
 
-const Prev_arrow: React.FC<arrow_props> = ({ onClick }) => {
+const Prev_Arrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
-    <>
-      <div className="prev_arrow" onClick={onClick}>
-        {/* <span>{">"}</span> */}
-        <img src={left_arrow} alt="prev arrow" />
-      </div>
-    </>
+    <div className="prev_button" onClick={onClick}>
+      <img src={left_arrow} alt="" />
+    </div>
   );
 };
-const Next_arrow: React.FC<arrow_props> = ({ onClick }) => {
+const Next_Arrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
-    <>
-      <div className="next_arrow" onClick={onClick}>
-        {/* <span>{">"}</span> */}
-        <img src={right_arrow} alt="next arrow" />
-      </div>
-    </>
+    <div className="next_button" onClick={onClick}>
+      <img src={arow_right} alt="" />
+    </div>
   );
 };
 
-interface carousel_props {
+interface CarouselProps {
   items: React.ReactNode[];
 }
-
-const Carousal: React.FC<carousel_props> = ({ items }) => {
+const MultipleItems: React.FC<CarouselProps> = ({ items }) => {
+  const sliderRef = useRef<Slider>(null);
   const settings = {
-    className: "center",
+    // dots: true,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3.5,
-    swipeToSlide: true,
-    prevArrow: <Prev_arrow />,
-    nextArrow: <Next_arrow />,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   };
-
   return (
-    <>
-      <div className="carousel-container">
-        {/* <div className="carousel-nav">
-          <Prev_arrow onClick={settings.prevArrow.onClick} />
-          <Next_arrow onClick={settings.nextArrow.onClick} />
-        </div> */}
-        <Slider {...settings}>{items}</Slider>
+    <div className="">
+      <div className="carousel-arrows">
+        <Prev_Arrow onClick={() => sliderRef.current?.slickPrev()} />
+        <Next_Arrow onClick={() => sliderRef.current?.slickNext()} />
       </div>
-    </>
+      <Slider ref={sliderRef} {...settings}>
+        {items}
+      </Slider>
+    </div>
   );
 };
-
-export default Carousal;
+export default MultipleItems;

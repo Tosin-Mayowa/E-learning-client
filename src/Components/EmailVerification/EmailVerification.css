@@ -1,0 +1,59 @@
+.logo img {
+    margin-left: 750px;
+    width: 300px;
+}
+
+.mail {
+    margin-left: 850px;
+    margin-top: 20px;
+    width: 140px;
+}
+
+.required-info {
+    margin-left: 550px;
+    width: 80%;
+}
+
+.required-info ul li {
+    display: inline-block;
+    padding-right: 10px;
+    
+}
+
+.required-info ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0065FD;
+}
+
+.verify {
+    width: 237px;
+    margin-left: 800px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.verification-message {
+    margin-left: 600px;
+    width: 70%;
+    font-family: sans-serif;
+    color: #969696;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -10px ;
+}
+
+.verification-button {
+    width: 283px;
+    margin-left: 760px;
+    margin-top: 10px;
+    height: 54px;
+    background-color: #0065FD;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}

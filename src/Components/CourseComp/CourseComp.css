@@ -1,0 +1,191 @@
+.courses-top {
+    margin-left: 24%;
+    margin-top: 9%;
+    width: 1080px;
+    display: flex;
+}
+
+.courses-top .addcourse-button {
+    margin-left: 800px;
+}
+
+.courses-top .mycourses-heading p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.courses-top .addcourse-button button {
+    width: 151px;
+    height: 46px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: #0065FD;
+    color: #FFFFFF;
+}
+
+.section .course-cards-section {
+    margin-left: 23.6%;
+    /* border: 1px solid black; */
+    width: 1094px;
+    height: 350px;
+    gap: 20px;
+}
+
+.section .course-cards-section .course-cards {
+    display: flex;
+    gap: 15px;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card {
+    width: 351px;
+    height: 332px;
+    background-color: #F9FAFB;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card button {
+    width: 317px;
+    height: 46px;
+    border-radius: 12px;
+    border: none;
+    padding: 12px, 0px, 12px, 0px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #0065FD;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card .frontend-development-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card .frontend-development-info {
+    display: flex;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card .frontend-development-info .frontend-development-modules {
+    font-size: 12px;
+    color: #FF4B4B;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card .frontend-development-info .frontend-development-instructors {
+    font-size: 12px;
+    color: #333333;
+}
+
+.section .course-cards-section .course-cards .frontend-development-card .frontend-development-card-image {
+    width: 317px;
+    /* border: 1px solid #333333; */
+    height: 180px;
+    border-radius: 8px;
+}
+
+.frontend-development-card-image img {
+    width: 316px;
+    height: 179px;
+}
+
+.section .course-cards-section .course-cards .digital-marketing-card {
+    width: 351px;
+    height: 332px;
+    background-color: #F9FAFB;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.section .course-cards-section .course-cards .digital-marketing-card .digital-marketing-card-image {
+    width: 317px;
+    /* border: 1px solid #333333; */
+    height: 180px;
+    border-radius: 8px;
+}
+
+.section .course-cards-section .course-cards .product-design-card {
+    width: 351px;
+    height: 332px;
+    background-color: #F9FAFB;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.section .course-cards-section .course-cards .product-design-card .product-design-card-image {
+    width: 317px;
+    /* border: 1px solid #333333; */
+    height: 180px;
+    border-radius: 8px;
+}
+
+.section .course-cards-section .digital-marketing-card .digital-marketing-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section .course-cards-section .digital-marketing-card .digital-marketing-info {
+    display: flex;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.section .course-cards-section .digital-marketing-card .digital-marketing-info .digital-marketing-modules {
+    font-size: 12px;
+    color: #FF4B4B;
+}
+
+.section .course-cards-section .digital-marketing-card .digital-marketing-info .digital-marketing-instructors {
+    font-size: 12px;
+    color: #333333;
+}
+
+.section .course-cards-section .course-cards .digital-marketing-card button {
+    width: 317px;
+    height: 46px;
+    border-radius: 12px;
+    border: none;
+    padding: 12px, 0px, 12px, 0px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #0065FD;
+}
+
+.section .course-cards-section .product-design-card .product-design-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section .course-cards-section .course-cards .product-design-card .product-design-info {
+    display: flex;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.section .course-cards-section .course-cards .product-design-card .product-design-info .product-design-modules {
+    font-size: 12px;
+    color: #FF4B4B;
+}
+
+.section .course-cards-section .course-cards .product-design-card .product-design-info .product-design-instructors {
+    font-size: 12px;
+    color: #333333;
+} 
+
+.section .course-cards-section .course-cards .product-design-card button {
+    width: 317px;
+    height: 46px;
+    border-radius: 12px;
+    border: none;
+    padding: 12px, 0px, 12px, 0px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #0065FD;
+}
