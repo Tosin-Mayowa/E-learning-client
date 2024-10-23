@@ -1,168 +1,175 @@
-.signup-wrapper{
-    width: 100%;
-    height: 100%;
-    margin-left: 48%;
-      /* border:1px solid red;   */
-      margin-top: 0;
-     padding: 0;
+.signup-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-left: 48%;
+  margin-top: 0;
+  padding: 0;
 }
 
+.signup-nested-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.signup-nested-wrapper{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.signup-logo {
+  width: 345px;
+  height: 70px;
+  margin-right: 35px;
 }
-.signup-logo{
-    width:345px;
-    height:70px;
-    margin-right: 35px;
-    /* border:1px solid blue; */
-}
-.signup_logo_img{
-  width:100%;
+
+.signup_logo_img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  
-  }
-.signup-personal-info-box{
- 
-    width:252px;
-    height:50px;
-    /* border:1px solid green; */
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;/* you can remove it later */
+  margin-left: 30px;
+
 }
-.signup_persona_info_text_one{
-  color:#333333;
+
+.signup-personal-info-box {
+
+  width: 252px;
+  height: 50px;
+  /* border:1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  /* you can remove it later */
+}
+
+.signup_persona_info_text_one {
+  color: #333333;
   font-size: 24px;
   margin: 0;
   padding: 0;
 }
-.signup_persona_info_text_two{
-  color:#969696;
+
+.signup_persona_info_text_two {
+  color: #969696;
   margin: 0;
   padding: 0;
 }
 
-.signup-input-box{
-    width:550px;
-    height:630px;
-   margin-top: 10px;
-   
+.signup-input-box {
+  width: 550px;
+  height: 630px;
+  margin-top: 10px;
+  margin-left: 90px;
 }
 
-.signup{
-    width: 100%;
-    height:13%;
-    
-    padding: 2px 0;
+.signup {
+  width: 100%;
+  height: 13%;
+  padding: 2px 0;
 }
 
-.signup-text{
-    font-size: 16px;
-    color: #333333;
-    padding: 0;
-    margin: 0;
+.signup-text {
+  font-size: 16px;
+  color: #333333;
+  padding: 0;
+  margin: 0;
 }
-.signup-input{
-  /* color: #969696;
-    background-color:#FAF9F6 ;
-    border-radius: 8px;
-    margin-top: 4px;
-    padding-left: 30px; */
-    width: 100%;
-    height: 52px;
-    border: none;
-    
-    margin-top: 0.5rem;
-    height: 3rem;
-    font-size: 15px;
-    line-height: 22px;
-    background: rgba(6, 0, 137, 0.05);
-    padding: 10px;
-    border-radius: 8px;
+
+.signup-input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  margin-top: 0.5rem;
+  height: 3rem;
+  font-size: 15px;
+  line-height: 22px;
+  background: rgba(6, 0, 137, 0.05);
+  padding: 10px;
+  border-radius: 8px;
 }
-.signup-next-btn{
-    width: 100%;
-    height: 52px;
-    border: none; 
-    border-radius: 8px;
-    background:#0A95D8;
-    color:#fff;
-    font-weight: 700;
-    font-size: 18px;
-    cursor: pointer;
+
+.signup-next-btn {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background: #0A95D8;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
 }
+
 .signup-input::placeholder {
-    color: gray;        /* Change the text color */
-    font-style: italic; /* Make the text italic */
-    opacity: 0.7;       /* Make the text more transparent */
-  }
-  .signup-next-btn-div{
-    margin-top: 40px;
-  }
+  color: gray;
+  /* Change the text color */
+  font-style: italic;
+  /* Make the text italic */
+  opacity: 0.7;
+  /* Make the text more transparent */
+}
 
-  /* Additional info styling */
-  .signup-additional-info-input-box{
-    width:550px;
-    height:630px;
-   margin-top: 10px;
-   /* border: 1px solid black; */
-  }
-  .signup-submit-btn-div{
-    margin-top: 40px;
-display: flex;
-flex-direction: column;
-  }
-  .signup-submit-btn{
-    width: 100%;
-    height: 52px;
-    border: none; 
-    border-radius: 8px;
-    background:#0A95D8;
-    color:#fff;
-    font-weight: 700;
-    font-size: 18px;
-    cursor: pointer;
-  }
- 
+.signup-next-btn-div {
+  margin-top: 40px;
+}
 
-  .signup-back-btn{
-    margin-top: 5px;
-color: #0A95D8;
-font-weight: 700;
-font-size: 12px;
-/* #324752 */
-border: none;
-background-color: transparent;
-transition: all linear 0.5s;
-  }
-  .signup-back-btn:hover{
-    cursor: pointer;
-    color:white;
-    background-color: #1b3541;
-    border-radius: 50px;
-  }
+/* Additional info styling */
+.signup-additional-info-input-box {
+  width: 550px;
+  height: 630px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+}
+
+.signup-submit-btn-div {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-submit-btn {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background: #0A95D8;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 
-  /* Phone input styling */
- 
+.signup-back-btn {
+  margin-top: 5px;
+  color: #0A95D8;
+  font-weight: 700;
+  font-size: 12px;
+  /* #324752 */
+  border: none;
+  background-color: transparent;
+  transition: all linear 0.5s;
+}
+
+.signup-back-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #1b3541;
+  border-radius: 50px;
+}
+
+
+/* Phone input styling */
+
 
 .PhoneInput {
   width: 100%;
   height: 52px;
   border: none;
-  
+
   margin-top: 0.5rem;
   height: 3rem;
-  
-  
+
+
 }
 
 .PhoneInputInput {
@@ -171,10 +178,10 @@ transition: all linear 0.5s;
   border-radius: 8px;
   background: rgba(6, 0, 137, 0.05);
   border-radius: 8px;
- border: none;
+  border: none;
   font-size: 15px;
   line-height: 22px;
- 
+
   padding: 10px;
 }
 
@@ -189,4 +196,69 @@ transition: all linear 0.5s;
   width: 20px;
   height: 20px;
   color: black;
+}
+
+/*  MEDIA QUERY FOR IPAD MINI*/
+@media (min-width: 600px) and (max-width: 1024px){
+    .signup-input-box {
+      margin-left:-200px ;
+    }
+    .signup_persona_info_text_one, .signup_persona_info_text_two, .signup-logo {
+      margin-left:-200px 
+    }
+    .signup-logo {
+      margin-top: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR IPAD AIR */
+@media (min-width: 800px) and (max-width: 1180px){
+  .signup-input-box {
+    margin-left:-230px;
+    margin-top: 50px;
+  }
+  .signup_persona_info_text_one, .signup_persona_info_text_two, .signup-logo {
+    margin-left:-200px; 
+  }
+  .signup-logo {
+    margin-top: 50px;
+    margin-bottom: -30px ;
+  }
+
+}
+
+/* MEDIA QUERY FOR IPHONE XR */
+@media (min-width: 320px) and (max-width: 575px) {
+  .signup-input-box {
+    margin-left: 300px;
+    margin-top: 30px;
+
+  }
+  .signup_logo_img {
+    width: 300px;
+    margin-left: 90px;
+  }
+  .signup-text {
+    padding-left: 10px;
+  }
+  .signup-input {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .signup_persona_info_text_one {
+      margin-left: 200px;
+      width: 100%;
+  }
+  .signup_persona_info_text_two {
+    margin-left: 170px;
+    width: 100%;
+  }
+  .signup-next-btn {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .signup-inpt-4, .signup-inpt-5, .signup-inpt-6 {
+    width: 350px;
+    margin-left: 10px;
+  }
 }

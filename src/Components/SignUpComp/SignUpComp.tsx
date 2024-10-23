@@ -7,6 +7,7 @@ import Logo from '../../assets/Globaltech_logo.png';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 
+
 type NonNullableSingleValue<T> = NonNullable<SingleValue<T>>;
 const initialState = {
   fullName: "",

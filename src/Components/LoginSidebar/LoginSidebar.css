@@ -16,3 +16,20 @@
     height: 650px;
     object-fit: cover;
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .Login-sidebar {
+        display: none;
+    }
+    * {
+        /* background-image: url(../../assets/MainContent.png); */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}   
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .Login-sidebar {
+        display: none;
+    }
+}
