@@ -13,13 +13,13 @@ type IRegister={
     matricNo:string,
     address:string,
     password:string,
-    phone_num:string
+    phone_num:string|undefined
   }
 
   type RegisterAction =
   | { type: 'SET_FULL_NAME'; payload: string }
   | { type: 'SET_ADDRESS'; payload: string }
-  | { type: 'SET_PHONE_NUM'; payload: string }
+  | { type: 'SET_PHONE_NUM'; payload: string | undefined }
   | { type: 'SET_STATE_VAL'; payload: SingleValue<OptionType>|MultiValue<MultiOptionType> }
   | { type: 'SET_COUNTRY'; payload: SingleValue<OptionType>|MultiValue<MultiOptionType>}
   | { type: 'SET_GENDER'; payload: SingleValue<OptionType>|MultiValue<MultiOptionType> }
@@ -29,6 +29,13 @@ type IRegister={
   | { type: 'SET_PASSWORD'; payload: string }
   | { type: 'SET_COURSES'; payload:MultiValue<MultiOptionType> }
   | { type: 'RESET'; payload: Partial<IRegister> };
+
+
+
+
+
+ 
+   
 
 const registerReducer = (state: IRegister, action: RegisterAction): IRegister => {
     if (action.type === 'SET_FULL_NAME') {

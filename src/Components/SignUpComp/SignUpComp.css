@@ -139,23 +139,22 @@
 }
 
 
-.signup-back-btn {
-  margin-top: 5px;
-  color: #0A95D8;
-  font-weight: 700;
-  font-size: 12px;
-  /* #324752 */
-  border: none;
-  background-color: transparent;
-  transition: all linear 0.5s;
-}
-
-.signup-back-btn:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #1b3541;
-  border-radius: 50px;
-}
+  .signup-back-btn{
+    margin-top: 5px;
+color: #0A95D8;
+font-weight: 700;
+font-size: 12px;
+/* #324752 */
+border: none;
+background-color: transparent;
+transition: all linear 0.5s;
+  }
+  .signup-back-btn:hover{
+    cursor: pointer;
+    color:white;
+    background-color: #1b3541;
+    border-radius: 50px;
+  }
 
 
 /* Phone input styling */
@@ -196,69 +195,4 @@
   width: 20px;
   height: 20px;
   color: black;
-}
-
-/*  MEDIA QUERY FOR IPAD MINI*/
-@media (min-width: 600px) and (max-width: 1024px){
-    .signup-input-box {
-      margin-left:-200px ;
-    }
-    .signup_persona_info_text_one, .signup_persona_info_text_two, .signup-logo {
-      margin-left:-200px 
-    }
-    .signup-logo {
-      margin-top: 20px;
-    }
-}
-
-/* MEDIA QUERY FOR IPAD AIR */
-@media (min-width: 800px) and (max-width: 1180px){
-  .signup-input-box {
-    margin-left:-230px;
-    margin-top: 50px;
-  }
-  .signup_persona_info_text_one, .signup_persona_info_text_two, .signup-logo {
-    margin-left:-200px; 
-  }
-  .signup-logo {
-    margin-top: 50px;
-    margin-bottom: -30px ;
-  }
-
-}
-
-/* MEDIA QUERY FOR IPHONE XR */
-@media (min-width: 320px) and (max-width: 575px) {
-  .signup-input-box {
-    margin-left: 300px;
-    margin-top: 30px;
-
-  }
-  .signup_logo_img {
-    width: 300px;
-    margin-left: 90px;
-  }
-  .signup-text {
-    padding-left: 10px;
-  }
-  .signup-input {
-    width: 350px;
-    margin-left: 10px;
-  }
-  .signup_persona_info_text_one {
-      margin-left: 200px;
-      width: 100%;
-  }
-  .signup_persona_info_text_two {
-    margin-left: 170px;
-    width: 100%;
-  }
-  .signup-next-btn {
-    width: 350px;
-    margin-left: 10px;
-  }
-  .signup-inpt-4, .signup-inpt-5, .signup-inpt-6 {
-    width: 350px;
-    margin-left: 10px;
-  }
 }
