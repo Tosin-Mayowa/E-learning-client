@@ -6,6 +6,7 @@ import './App.css'
 // import EmailVerification from './Components/EmailVerification/EmailVerification'
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 // import Class from './pages/Class'
 // import Course from './pages/Course'
