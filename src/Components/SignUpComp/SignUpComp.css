@@ -2,9 +2,11 @@
   width: 100%;
   height: 100%;
   margin-left: 48%;
+  /* border:1px solid red;   */
   margin-top: 0;
   padding: 0;
 }
+
 
 .signup-nested-wrapper {
   display: flex;
@@ -18,27 +20,24 @@
   width: 345px;
   height: 70px;
   margin-right: 35px;
+  /* border:1px solid blue; */
 }
 
 .signup_logo_img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-left: 30px;
-
 }
 
 .signup-personal-info-box {
 
-  width: 252px;
   height: 50px;
   /* border:1px solid green; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
-  /* you can remove it later */
+  margin-top: -100px;
 }
 
 .signup_persona_info_text_one {
@@ -56,9 +55,8 @@
 
 .signup-input-box {
   width: 550px;
-  height: 630px;
-  margin-top: 10px;
-  margin-left: 90px;
+  height: 730px;
+  margin-top: -100px;
 }
 
 .signup {
@@ -74,6 +72,10 @@
   margin: 0;
 }
 
+.signup-input::placeholder {
+  padding-left: 10px;
+}
+
 .signup-input {
   width: 100%;
   height: 52px;
@@ -83,8 +85,109 @@
   font-size: 15px;
   line-height: 22px;
   background: rgba(6, 0, 137, 0.05);
-  padding: 10px;
   border-radius: 8px;
+}
+
+.checkbox-list button {
+  background: rgba(6, 0, 137, 0.05);
+  width: 550px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+}
+
+.list {
+  margin-left: 490px;
+}
+
+.checkbox-container {
+  /* width: 550px; */
+  margin-top: 35px;
+  margin-left: 220px;
+}
+
+
+
+.signup-inpt-5 {
+  position: relative;
+  display: inline-block;
+}
+
+.signup-inpt-5 select {
+  appearance: none;
+  /* Remove default arrow */
+  padding-right: 2rem;
+  /* Space for custom icon */
+  font-size: 16px;
+}
+
+.signup-inpt-5::after {
+  content: "▼";
+  /* Or use an actual arrow icon */
+  position: absolute;
+  right: 10px;
+  /* Adjust for padding */
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Allow clicks through the icon */
+  padding-right: 7px;
+}
+
+.signup-inpt-4 {
+  position: relative;
+  display: inline-block;
+}
+
+.signup-inpt-4 select {
+  appearance: none;
+  /* Remove default arrow */
+  padding-right: 2rem;
+  /* Space for custom icon */
+  font-size: 15px;
+  padding-left: 10px;
+  font-style: italic;
+  color: #969696;
+}
+
+.signup-inpt-4::after {
+  content: "▼";
+  /* Or use an actual arrow icon */
+  position: absolute;
+  right: 10px;
+  /* Adjust for padding */
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Allow clicks through the icon */
+  padding-right: 10px;
+}
+
+.signup-inpt-6 {
+  position: relative;
+  display: inline-block;
+}
+
+.signup-inpt-6 select {
+  appearance: none;
+  /* Remove default arrow */
+  padding-right: 2rem;
+  /* Space for custom icon */
+  font-size: 15px;
+  padding-left: 7px;
+}
+
+.signup-inpt-6::after {
+  content: "▼";
+  /* Or use an actual arrow icon */
+  position: absolute;
+  right: 10px;
+  /* Adjust for padding */
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Allow clicks through the icon */
+  padding-right: 7px;
 }
 
 .signup-next-btn {
@@ -115,9 +218,8 @@
 /* Additional info styling */
 .signup-additional-info-input-box {
   width: 550px;
-  height: 630px;
-  margin-top: 10px;
-  /* border: 1px solid black; */
+  height: 700px;
+  margin-top: -70px;
 }
 
 .signup-submit-btn-div {
@@ -139,23 +241,23 @@
 }
 
 
-  .signup-back-btn{
-    margin-top: 5px;
-color: #0A95D8;
-font-weight: 700;
-font-size: 12px;
-/* #324752 */
-border: none;
-background-color: transparent;
-transition: all linear 0.5s;
-  }
-  .signup-back-btn:hover{
-    cursor: pointer;
-    color:white;
-    background-color: #1b3541;
-    border-radius: 50px;
-  }
+.signup-back-btn {
+  margin-top: 5px;
+  color: #0A95D8;
+  font-weight: 700;
+  font-size: 12px;
+  /* #324752 */
+  border: none;
+  background-color: transparent;
+  transition: all linear 0.5s;
+}
 
+.signup-back-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #1b3541;
+  border-radius: 50px;
+}
 
 /* Phone input styling */
 
@@ -195,4 +297,55 @@ transition: all linear 0.5s;
   width: 20px;
   height: 20px;
   color: black;
+}
+
+
+/* checkbox */
+
+.checkbox-list {
+  position: relative;
+}
+
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-item {
+  margin: 5px;
+  width: 300px;
+  word-spacing: 4px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-up select {
+  width: 20px;
 }
